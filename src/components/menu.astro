@@ -1,0 +1,201 @@
+
+<body>
+    <div class="container">
+      <!-- Contenedor de los botones circulares con imágenes -->
+      <div class="circle-button-container">    
+          <!-- Botón 1 -->
+          <div class="button-wrapper">
+              <div class="circle-button" id="menu1"><img src="/public/bienestar.png" alt="Botón 1"></div>
+              <span class="button-text">Bienestar</span>
+          </div>  
+  
+          <!-- Botón 2 -->
+          <div class="button-wrapper">  
+              <div class="circle-button" id="menu2"><img src="/public/recurso_guia.png" alt="Botón 2"></div>
+              <span class="button-text">Guía</span> 
+          </div>
+  
+          <!-- Botón 3 -->
+          <div class="button-wrapper">
+              <div class="circle-button" id="menu3"><img src="/public/belleza.png" alt="Botón 3"></div>
+              <span class="button-text">Belleza</span>
+          </div>
+  
+          <!-- Botón 4 -->
+          <div class="button-wrapper">
+              <div class="circle-button" id="menu4"><img src="/public/Recurso_Sanacion.png" alt="Botón 4"></div>
+              <span class="button-text">Sanación</span>
+          </div>
+  
+          <!-- Botón 5 -->
+          <div class="button-wrapper"> 
+              <div class="circle-button" id="menu5"><img src="/public/Recurso_Limpieza.png" alt="Botón 5"></div>
+              <span class="button-text">Limpieza</span>
+          </div>
+  
+          <!-- Botón 6 -->
+          <div class="button-wrapper">
+              <div class="circle-button" id="menu6"><img src="/public/Tips,png.webp" alt="Botón 6"></div>
+              <span class="button-text">Tips</span>
+          </div>
+      </div>
+    </div>
+</body> 
+
+<!--<section> 
+    <div>
+        <div>
+            <a href="https://florser.cl/servicios/bienestar/">
+                <img src="/public/bienestar.png">
+            </a>
+            <p>Bienestar</p> 
+        </div>
+
+        <div>
+            <a href="https://florser.cl/servicios/guia/">
+                    <img class="services" src="/public/Recurso_Guia.png" alt="Guía Florser"> 
+                </a> 
+                <p class="home-service-text">Guía</p>  
+            </a>
+        </div> 
+
+        <div>
+            <a href="https://florser.cl/servicios/belleza/"> 
+                <img src="/public/belleza.png" alt="#"> 
+            </a>
+            <p>Belleza</p> 
+        </div>
+
+        <div>
+            <a href="">
+                <img src="" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="">
+                <img src="" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="">
+                <img src="" alt="">
+            </a>
+        </div>
+    </div>   
+</section>--!>
+
+<style>
+/* General reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif; 
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+    margin-top: 30px; /* Separación natural con el carrusel */
+}
+
+/* Contenedor de los botones circulares */
+.circle-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    flex-wrap: nowrap;
+}
+
+/* Estilo de los botones individuales */
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 13%;
+    min-width: 120px;
+}
+
+/* Estilo del botón circular */
+.circle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 60%; /* Hace que el botón sea circular */
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.circle-button img {
+    width: 60%;
+    height: auto;
+}
+
+/* Estilo de texto debajo de los botones */
+.button-text {
+    margin-top: 0.6vw;
+    font-size: 1.8vw;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Efecto de hover sobre los botones */
+.circle-button:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividad para pantallas medianas */
+@media (max-width: 768px) {
+    .circle-button-container {
+        gap: 30px;
+    }
+
+    .button-wrapper {
+        width: 20%;
+        min-width: 120px;
+    }
+
+    .circle-button {
+        width: 80px;
+        height: 80px;
+    }
+
+    .button-text {
+        font-size: 4vw;
+    }
+}
+
+/* Responsividad para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .circle-button-container {
+        gap: 20px;
+    }
+
+    .button-wrapper {
+        width: 45%;
+    }
+
+    .circle-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .button-text {
+        font-size: 5vw;
+    }
+}
+
+</style>  
